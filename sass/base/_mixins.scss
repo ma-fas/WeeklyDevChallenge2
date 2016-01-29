@@ -1,0 +1,13 @@
+@mixin add-bg ($color) {
+	background: $color;
+	@if $color == $bg_about {
+		color: $light;
+	} @else if $color == $bg_services {
+		color: $light;
+	} @else if $color == $bg_blog {
+		color: $light;
+	} @else {
+		color: $dark;
+	}
+}
+

@@ -1,0 +1,27 @@
+.row-footer {
+	background-color: $dark;
+	color: $light;
+	padding: 20px 0;
+
+	.container {
+		text-align: center;
+		margin: 20px auto 10px auto;
+	}
+
+	p {
+		display: block;
+		margin-bottom: 0;
+		opacity: 0.6;
+		padding: 5px 0;
+
+		&.logo-footer {
+			font-size: 1.8em;
+			opacity: 0.7;
+		}
+
+		span {
+			color: rgb(255, 43, 88);
+			font-weight: bold;
+		}
+	}
+}

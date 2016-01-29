@@ -1,0 +1,96 @@
+section {
+	padding: 70px 0;
+
+	&#about {
+		@include add-bg($bg_about);
+		text-align: center;
+	}
+
+	&#services {
+		position: relative;
+		text-align: center;
+		@include add-bg($bg_services);
+		h2 {
+			position: absolute;
+			top: 20%;
+			left: 5%;
+			text-align: center;
+		}
+		.img-responsive {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+	&#gallery {
+		@include add-bg($bg_gallery);
+		text-align: center;
+
+		.row:not(:first-of-type) {
+			margin-bottom: 0;
+		}
+
+		img {
+			margin-bottom: 	30px;
+			-webkit-box-shadow: 1px 2px 5px 0px rgba(38,38,38,0.47);
+				-moz-box-shadow: 1px 2px 5px 0px rgba(38,38,38,0.47);
+				box-shadow: 1px 2px 5px 0px rgba(38,38,38,0.47);
+		}
+	}
+
+	&#subscribe {
+		position: relative;
+		@include add-bg($light);
+		background-image: url('../img/bg_subscribe.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
+
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 255, 255, 0.5);
+			z-index: 0;
+		}
+
+		.section-header,
+		#subscribe-form {
+			z-index: 10;
+		}
+	}
+
+	&#blog {
+		@include add-bg($bg_blog);
+		text-align:center;
+	}
+
+	&#contact {
+		@include add-bg($light);
+		background-image: url('../img/bg_contact.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		
+		h2, p {
+			text-align: center;
+		}
+
+		dt {
+			text-transform: uppercase;
+			letter-spacing: 0.06em;
+		}
+
+		dd {
+			opacity: 0.8;
+		}
+	}
+}
+
+.row {
+	margin-bottom: 30px;
+}

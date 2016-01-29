@@ -1,0 +1,188 @@
+@media (min-width: 480px) {
+	section#services h2 {
+		top: 38%;
+		left: 14%;
+	}
+}
+
+@media (min-width: 768px) {
+
+	section {
+
+		&#about .section-header {
+			float: right;
+			text-align: left;
+		}
+		&#services {
+			.img-responsive {
+				margin-top: 25%;
+			}
+			.float-right {
+				float: right;
+			}
+			h2 {
+				left: 10%;
+			}
+		}
+	}
+
+	.navbar {
+		padding-top: 1%;
+		background-color: transparent;
+
+		.navbar-collapse.collapse {
+		background-color: transparent;
+
+			ul {
+				display: inline-block;
+				width: auto;
+				float: right;
+				text-align: center;
+				padding-top: 2%;
+				margin-top: 0;
+				background-color: transparent;
+				
+				li {
+					margin-left: 15px;
+					border-top: 3px solid transparent;
+					transition: border-top 0.5s;
+
+					a {
+						padding: 8px 0;
+					}
+					&.active,
+					&:hover {
+						border-top: 3px solid $accent_header;
+
+						a {
+							background-color: transparent;
+
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.js-scroll-on {
+		padding-top: 1%;
+		background-color: $light;
+		.navbar-header {
+			padding: 0;
+		}
+		.navbar-collapse.collapse ul {
+			padding-top: 0.5%;
+
+			li a {
+				padding-top: 4px;
+				font-size: 0.9em;
+			}
+		}
+
+	}
+
+	li.active,
+	li.active:focus,
+	li.active:hover,
+	li.active:active {
+		background: inherit;
+	}
+
+	li.active a,
+	li.active:focus a,
+	li.active:hover a,
+	li.active:active a {
+		background: inherit;
+	}
+
+
+	.row-footer {
+		.container {
+			padding: 0;
+		}
+		p {
+		display: inline;
+		line-height: 1px;
+
+		&:first-of-type {
+			float: left;
+		}
+
+		&:last-of-type {
+			float: right;
+		}
+		
+	}
+}
+
+	.btn-service-wrap {
+		margin-top: 80px;
+		}
+
+	.btn-service {
+	width: 100%;
+	max-width: 400px;
+	min-height: 90px;
+	margin: 10px auto;
+	padding: 10px;
+
+	a {
+		width: 70%;
+		font-size: 1.3em;
+		padding-top: 2%;
+	}
+
+	.service-img {
+		width: 50px;
+		height: 50px;
+		margin-right: 4%;
+
+		&:before {
+		top: -50%;
+		left: -45%;
+		width: 2px;
+		height: 200%;
+		background-color: rgba(38, 38, 38, 0.2);
+		}
+	}
+}
+
+	.card-img-overlay .card-text {
+		top: 85%;
+		left: 5%;
+	}
+}
+
+@media (min-width: 992px) {
+
+	section{
+
+		&#about .section-header {
+			margin-top: 8%;
+		}
+		&#services {
+			.img-responsive {
+				margin-top: 0%;
+			}
+			
+			h2 {
+				top: 40%;
+				left: 15%;
+			}
+		}
+		&#subscribe:before {
+			visibility: hidden;
+		}
+
+		&#blog .col-xs-12 {
+			padding-right: 0;
+		}
+	}
+
+	.card {
+		width: 32%;
+		height: 150px;
+		float: left;
+		margin-right: 1%; 
+	}
+}
